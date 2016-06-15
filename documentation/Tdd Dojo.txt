@@ -1,0 +1,11 @@
+Analyse source code -> .json
+CRUD
+Projects
+Developers on a project
+Filtering logic + summarise and display of a report on the data.
+* Kent Beck -Test-Driven Development by Example
+* Node: Mocha + Chai (Mention) + sinon Explain the difference
+* Browser: Karma + Jasmin Explain the difference
+* catch up on Wednesday mornings 10:00 create meeting request slack chat
+* Content to be ready by 06 July
+* Github repo

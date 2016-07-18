@@ -5,10 +5,10 @@ module.exports = function(config) {
     basePath: './app',
 
     files: [
-      'node_modules/angular/angular.js',
-      'node_modules/angular-route/angular-route.js',
-      'node_modules/angular-mocks/angular-mocks.js',
-      'app/resultsListView/resultsListView.js'
+      '../node_modules/angular/angular.js',
+      '../node_modules/angular-route/angular-route.js',
+      '../node_modules/angular-mocks/angular-mocks.js',
+      '**/*.js'
     ],
 
     autoWatch: true,

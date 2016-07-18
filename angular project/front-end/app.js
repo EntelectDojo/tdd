@@ -4,6 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'resultsListView',
+  'uploadView',
   'fileUploader'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

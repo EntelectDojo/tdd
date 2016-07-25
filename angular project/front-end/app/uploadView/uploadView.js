@@ -1,18 +1,22 @@
 'use strict';
 
-angular.module('uploadView', ['ngRoute'])
+angular.module('uploadView', ['ngRoute', 'fileUploader'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/upload');
+  $routeProvider.when('/upload', {
+    templateUrl: 'app/uploadView/uploadView.html'
+  });
 }])
 
 .directive('uploadView', function() {
   return {
-    templateUrl: './uploadView.html',
     bindToController: {},
     restrict: 'E',
-    controller: function() {
-    	
+    controllerAs:'ctrlUploadView',
+    controller: function(fileUploader) {
+    	 this.uploadFile = function() {
+          fileUploader.uploadFile(this.file);
+       }
     }
   };
 });

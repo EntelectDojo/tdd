@@ -1,6 +1,17 @@
-<div>
-	<div>This is where you upload</div>
+<div class="container">
+	<div class="page-header">
+	  <h1>This is where you upload</h1>
+	</div>
+	
 	<div>
-		<input type="file" ng-model="ctrlUploadView.file"></input>
+		<div class="input-group">
+            <label class="input-group-btn">
+                <span class="btn btn-primary">
+                    Browse&hellip; <input type="file" style="display: none;">
+                </span>
+            </label>
+            <input type="text" class="form-control" readonly>
+        </div>
+		
 	</div>
 </div>

@@ -17,6 +17,7 @@ angular.module('uploadView', ['ngRoute', 'fileUploader'])
     	 this.uploadFile = function() {
           fileUploader.uploadFile(this.file);
        }
+
     }
   };
 });

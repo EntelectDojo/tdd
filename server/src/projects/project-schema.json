@@ -1,4 +1,6 @@
 {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "A project container, can have child and parent projects. Projects can also a codebase which we will store metrics against.",
     "type": "object",
     "properties": {
         "name": {

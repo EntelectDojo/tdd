@@ -9,3 +9,4 @@ Filtering logic + summarise and display of a report on the data.
 * catch up on Wednesday mornings 10:00 create meeting request slack chat
 * Content to be ready by 06 July
 * Github repo
+npm install -g plato

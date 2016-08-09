@@ -5,7 +5,8 @@
     "description": "Server for the source points system",
     "main": "index.js",
     "scripts": {
-        "test": "test"
+        "test": "test",
+        "report": "plato -r -d report -e .eslintrc src"
     },
     "repository": {
         "type": "git",

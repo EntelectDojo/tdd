@@ -3,7 +3,6 @@ var fs = require('fs');
 var path = require('path');
 var CronJob = require('cron').CronJob;
 var config = require('config');
-var appRootPath = require('app-root-path');
 var fileLogPath = config.get('logging.file.folder');
 var moment = require('moment');
 var async = require('async');

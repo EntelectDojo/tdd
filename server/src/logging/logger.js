@@ -5,6 +5,7 @@ var config = require('config');
 var fs = require('fs');
 var fileLogPath = config.get('logging.file.folder');
 require('winston-loggly');
+require('winston-daily-rotate-file');
 var logger = new winston.Logger();
 var environment = config.util.getEnv('NODE_ENV');
 var packageJson = require('../../package.json');

@@ -1,4 +1,9 @@
 'use strict';
-console.log('Scheduling jobs ...');
-require('../logging/remove-old-logs.job.js').schedule();
-console.log('Done Scheduling jobs.');
+var removeOldLogs = require('../logging/remove-old-logs.job.js');
+
+module.exports = function schedule() {
+    console.log('Scheduling jobs ...');
+    removeOldLogs.schedule();
+    console.log('Done Scheduling jobs.');
+};
+

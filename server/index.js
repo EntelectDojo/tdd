@@ -1,11 +1,16 @@
 'use strict';
 var packageJson = require('./package.json');
-process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 var config = require('config');
-var app = require('./src/app.js');
-
+var createApp = require('./src/app.js');
 var port = config.get('port');
-app.listen(port, function () {
-    console.info(packageJson.name + ' is listening on port ' + config.get('port'));
-    require('./src/jobs/scheduler.js');
+var scheduler = require('./src/jobs/scheduler.js');
+createApp(function (err, app) {
+    if (err) {
+        console.error(err);
+        throw err;
+    }
+    app.listen(port, function () {
+        scheduler();
+        console.info(packageJson.name + ' is listening on port ' + config.get('port'));
+    });
 });

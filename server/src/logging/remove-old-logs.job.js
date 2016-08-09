@@ -16,7 +16,7 @@ module.exports = {
 function schedule() {
     var startTheJobAutomatically = true; //if false, remember to call job.start(), assuming job is the variable you set the cron job to.
     // eslint-disable-next-line no-new
-    new CronJob(cronTimers.everyMinute, onTick, null, startTheJobAutomatically, config.get('timeZone'));
+    new CronJob(cronTimers.everyHour, onTick, null, startTheJobAutomatically, config.get('timeZone'));
     console.log('Scheduled the remove old logs job');
 }
 

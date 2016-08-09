@@ -5,8 +5,8 @@
         "file": {
             "folder": "./logs",
             "retention": {
-                "units": "second",
-                "amount": 1
+                "units": "days",
+                "amount": 7
             }
         },
         "loggly": {

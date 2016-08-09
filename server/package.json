@@ -1,0 +1,27 @@
+{
+  "name": "source-points-server",
+  "version": "1.0.0",
+  "description": "Server for the source points system",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/EntelectDojo/tdd.git"
+  },
+  "keywords": [
+    "tdd",
+    "testing",
+    "node",
+    "express",
+    "mocha",
+    "chai"
+  ],
+  "author": "Ryan Kotzen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EntelectDojo/tdd/issues"
+  },
+  "homepage": "https://github.com/EntelectDojo/tdd#readme"
+}

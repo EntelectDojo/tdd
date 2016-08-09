@@ -5,10 +5,10 @@ require('../init.js');
 var projectSchema = require('../../src/projects/project-schema.json');
 var _ = require('lodash');
 var ajv = new require('ajv')();
+var validProject = require('./valid-project.json');
 
 describe('Project', function () {
     describe('Validation', function () {
-        var validProject = {name: "validProject"};
         it('Example object should pass validation', function () {
             var data = _.cloneDeep(validProject);
             var valid = ajv.validate(projectSchema, data);

@@ -40,3 +40,4 @@ angular project/front-end/node_modules/
 angular project/front-end/tmp
 server/.idea
 server/report
+.idea/
